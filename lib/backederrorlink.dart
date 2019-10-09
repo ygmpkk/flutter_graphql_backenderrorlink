@@ -44,7 +44,7 @@ class BackendErrorLink extends Link {
                       case 501:
                       case 502:
                       case 503:
-                        onClientError(result, response);
+                        onServerError(result, response);
                         break;
                       default:
                         onUnknownError(result, response);
